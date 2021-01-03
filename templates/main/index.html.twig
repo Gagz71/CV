@@ -1,0 +1,117 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dounia Manhouli - Développeuse Web junior{% endblock %}
+
+{% block body %}
+
+    <div class="container-fluid ">
+        <div id="app">
+            <div id="wrapper">
+                <!-- Make sure data-text equals the text you put inside the tags. -->
+                <h1 class="glitch" data-text="DOUNIA MANHOULI">DOUNIA MANHOULI</h1>
+                <span class="sub">Développeuse web junior</span>
+            </div>
+        </div>
+
+        <div class="row  matrix-row flex-column">
+            <h1 class="font-matrix m-auto my-name">
+                BIENVENUE
+            </h1>
+        </div>
+
+        <div class="row bg-dark">
+            <p class="lead text-white">
+                Je m'apelle Dounia Manhouli et je suis Développeuse web junior. <br>
+                Passionnée par la réalisation, le développement et l’intégration de projets web, aussi bien côté Front-End que Back-End, c’est avec beaucoup de détermination et de plaisir que j'ai obtenu mon titre professionnel au sein de l'école
+                <a href="https://www.wf3.fr/" title="Voir le site de WebForce3">WebForce3 Bourgogne</a>. <br>
+                Mon parcours, complété par ma passion pour ce domaine, m'a permis d'acquérir des connaissances solides et techniques, indispensables à l'exercice de ce métier.
+            </p>
+        </div>
+
+        <div class="row bg-dark">
+            <div class="col-6 my-ancre-btn">
+                <a href="#compétence" class="border-animation">
+                    <div class="border-animation__inner">
+                    Voir mes compétences</div>
+                </a>
+            </div>
+            <div class="col-6 d-flex my-btn-cv">
+                <a href="{{ asset('docs/CV_2020-09-13_Dounia_Manhouli.pdf') }}" class="button" download="mon_cv">Télécharger mon CV</a>
+            </div>
+        </div>
+
+
+
+        <div class=" row bg-custom-1">
+            <div class="overlay col-12"></div>
+        </div>
+        <div class="row bg-dark flex-column">
+            <div class="col-12">
+                <h1 class="display-4 text-white m-auto" id="compétence">Mes compétences</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 m-auto">
+                    <div class="target">
+                        <span class="img-circle img-circle-1 tiny"></span>
+                        <div class="normal">
+                            <ul>
+                                <li>Conception graphique d'un interface Web fonctionnelle</li>
+                                <li>Framework Bootstrap</li>
+                                <li>Responsive Design</li>
+                                <li>Accessibilité</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <span class="img-circle img-circle-2"></span>
+                    <span class="img-circle img-circle-3"></span>
+                    <span class="img-circle img-circle-4"></span>
+                    <span class="img-circle img-circle-5"></span>
+                    <span class="img-circle img-circle-6"></span>
+                    <span class="img-circle img-circle-7"></span>
+                    <span class="img-circle img-circle-8"></span>
+                    <span class="img-circle img-circle-9"></span>
+                    <span class="img-circle img-circle-10"></span>
+                    <span class="img-circle img-circle-11"></span>
+                    <span class="img-circle img-circle-12"></span>
+{#                    <img src="{{ asset('img/html5css3__024276400_1034_29082016.png') }}" alt="logo html css" class="img-circle">#}
+{#                    <img src="{{ asset('img/logo_javascript.png') }}" alt="logo js" class="img-circle">#}
+{#                    <img src="{{ asset('img/formation-jquery.png') }}" alt="logo jQuery" class="img-circle">#}
+{#                    <img src="{{ asset('img/php_PNG50.png') }}" alt="logo php" class="img-circle">#}
+{#                    <img src="{{ asset('img/MySQL-Logo.wine.png') }}" alt="logo mySql" class="img-circle">#}
+{#                    <img src="{{ asset('img/logo-symfony.png') }}" alt="logo symfony" class="img-circle">#}
+{#                    <img src="{{ asset('img/unnamed2.png') }}" alt="logo Wordpress" class="img-circle">#}
+{#                    <img src="{{ asset('img/Stripe-Logo.png') }}" alt="logo stripe" class="img-circle">#}
+{#                    <img src="{{ asset('img/illustrator-full-logo.png') }}" alt="logo AdobeIllustrator" class="img-circle">#}
+{#                    <img src="{{ asset('img/blender_logo_socket.png') }}" alt="logo Blender" class="img-circle">#}
+{#                    <img src="{{ asset('img/seo-1024x499.png') }}" alt="logo SEO" class="img-circle">#}
+{#                    <img src="{{ asset('img/1280px-Git-logo.svg.png') }}" alt="logo GIT" class="img-circle">#}
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <footer>
+            Suivez le lapin blanc !
+            Libérez votre esprit ! Confiez-moi vos futurs projets !
+            Mets ta ceinture Alice ! Et bon voyage, au pays des merveilles !
+            Toute chose commence par un choix !
+            Je ne peux que te montrer la porte, c'est à toi qu'il appartient de la franchir.
+        </footer>
+
+    </div>
+
+
+
+{% endblock %}

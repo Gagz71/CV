@@ -1,0 +1,862 @@
+/*Matrix Animation*/
+@charset "UTF-8";
+@-webkit-keyframes typed {
+    /* string 1, char 1 */
+    0%, 0.5436623094% {
+        content: "M";
+    }
+    /* string 1, char 2 */
+    0.5446623094%, 1.0883246187% {
+        content: "Mo";
+    }
+    /* string 1, char 3 */
+    1.0893246187%, 1.6329869281% {
+        content: "Mon";
+    }
+    /* string 1, char 4 */
+    1.6339869281%, 2.1776492375% {
+        content: "Mon ";
+    }
+    /* string 1, char 5 */
+    2.1786492375%, 2.7223115468% {
+        content: "Mon n";
+    }
+    /* string 1, char 6 */
+    2.7233115468%, 3.2669738562% {
+        content: "Mon no";
+    }
+    /* string 1, char 7 */
+    3.2679738562%, 3.8116361656% {
+        content: "Mon nom";
+    }
+    /* string 1, char 8 */
+    3.8126361656%, 4.3562984749% {
+        content: "Mon nom ";
+    }
+    /* string 1, char 9 */
+    4.3572984749%, 4.9009607843% {
+        content: "Mon nom e";
+    }
+    /* string 1, char 10 */
+    4.9019607843%, 5.4456230937% {
+        content: "Mon nom es";
+    }
+    /* string 1, char 11 */
+    5.4466230937%, 5.9902854031% {
+        content: "Mon nom est";
+    }
+    /* string 1, char 12 */
+    5.9912854031%, 6.5349477124% {
+        content: "Mon nom est ";
+    }
+    /* string 1, char 13 */
+    6.5359477124%, 7.0796100218% {
+        content: "Mon nom est ";
+    }
+    /* string 1, char 14 */
+    7.0806100218%, 7.6242723312% {
+        content: "Mon nom est .";
+    }
+    /* string 1, char 15 */
+    7.6252723312%, 8.1689346405% {
+        content: "Mon nom est ..";
+    }
+    /* string 1, char 16 */
+    8.1699346405%, 8.7135969499% {
+        content: "Mon nom est ...";
+    }
+    /* string 1, char 17 */
+    8.7145969499%, 9.2582592593% {
+        content: "Mon nom est ..";
+    }
+    /* string 1, char 18 */
+    9.2592592593%, 9.8029215686% {
+        content: "Mon nom est .";
+    }
+    /* string 1, char 19 */
+    9.8039215686%, 10.347583878% {
+        content: "Mon nom est ";
+    }
+    /* string 1, char 20 */
+    10.348583878%, 10.8922461874% {
+        content: "Mon nom est";
+    }
+    /* string 1, char 21 */
+    10.8932461874%, 11.4369084967% {
+        content: "Mon nom es";
+    }
+    /* string 1, char 22 */
+    11.4379084967%, 23.310546841% {
+        content: "Mon nom e";
+    }
+    /* string 1, char 23 */
+    23.311546841%, 23.7462766885% {
+        content: "Mon nom ";
+    }
+    /* string 1, char 24 */
+    23.7472766885%, 24.1820065359% {
+        content: "Mon nom";
+    }
+    /* string 1, char 25 */
+    24.1830065359%, 24.6177363834% {
+        content: "Mon no";
+    }
+    /* string 1, char 26 */
+    24.6187363834%, 25.0534662309% {
+        content: "Mon n";
+    }
+    /* string 1, char 27 */
+    25.0544662309%, 25.4891960784% {
+        content: "Mon ";
+    }
+    /* string 1, char 28 */
+    25.4901960784%, 25.9249259259% {
+        content: "Mon";
+    }
+    /* string 1, char 29 */
+    25.9259259259%, 26.3606557734% {
+        content: "Mo";
+    }
+    /* string 1, char 30 */
+    26.3616557734%, 26.7963856209% {
+        content: "M";
+    }
+    /* string 1, char 31 */
+    26.7973856209%, 27.2321154684% {
+        content: ".";
+    }
+    /* string 1, char 32 */
+    27.2331154684%, 27.6678453159% {
+        content: "D";
+    }
+    /* string 1, char 33 */
+    27.6688453159%, 28.1035751634% {
+        content: "DO";
+    }
+    /* string 1, char 34 */
+    28.1045751634%, 28.5393050109% {
+        content: "DOU";
+    }
+    /* string 1, char 35 */
+    28.5403050109%, 28.9750348584% {
+        content: "DOUN";
+    }
+    /* string 1, char 36 */
+    28.9760348584%, 29.4107647059% {
+        content: "DOUNI";
+    }
+    /* string 1, char 37 */
+    29.4117647059%, 29.8464945534% {
+        content: "DOUNIA";
+    }
+    /* string 1, char 38 */
+    29.8474945534%, 30.2822244009% {
+        content: "DOUNIA ";
+    }
+    /* string 1, char 39 */
+    30.2832244009%, 30.7179542484% {
+        content: "DOUNIA";
+    }
+    /* string 1, char 40 */
+    30.7189542484%, 31.1536840959% {
+        content: "DOUNI";
+    }
+    /* string 1, char 41 */
+    31.1546840959%, 31.5894139434% {
+        content: "DOUN";
+    }
+    /* string 1, char 42 */
+    31.5904139434%, 32.0251437908% {
+        content: "DOU";
+    }
+    /* string 1, char 43 */
+    32.0261437908%, 32.4608736383% {
+        content: "DO";
+    }
+    /* string 1, char 44 */
+    32.4618736383%, 37.907496732% {
+        content: "D";
+    }
+    /* string 2, char 1 */
+    37.908496732%, 38.4521590414% {
+        content: ".";
+    }
+
+}
+@keyframes typed {
+    /* string 1, char 1 */
+    0%, 0.5436623094% {
+        content: "M";
+    }
+    /* string 1, char 2 */
+    0.5446623094%, 1.0883246187% {
+        content: "Mo";
+    }
+    /* string 1, char 3 */
+    1.0893246187%, 1.6329869281% {
+        content: "Mon";
+    }
+    /* string 1, char 4 */
+    1.6339869281%, 2.1776492375% {
+        content: "Mon ";
+    }
+    /* string 1, char 5 */
+    2.1786492375%, 2.7223115468% {
+        content: "Mon n";
+    }
+    /* string 1, char 6 */
+    2.7233115468%, 3.2669738562% {
+        content: "Mon no";
+    }
+    /* string 1, char 7 */
+    3.2679738562%, 3.8116361656% {
+        content: "Mon nom";
+    }
+    /* string 1, char 8 */
+    3.8126361656%, 4.3562984749% {
+        content: "Mon nom ";
+    }
+    /* string 1, char 9 */
+    4.3572984749%, 4.9009607843% {
+        content: "Mon nom e";
+    }
+    /* string 1, char 10 */
+    4.9019607843%, 5.4456230937% {
+        content: "Mon nom es ";
+    }
+    /* string 1, char 11 */
+    5.4466230937%, 5.9902854031% {
+        content: "Mon nom est";
+    }
+    /* string 1, char 12 */
+    5.9912854031%, 6.5349477124% {
+        content: "Mon nom est ";
+    }
+    /* string 1, char 13 */
+    6.5359477124%, 7.0796100218% {
+        content: "Mon nom est ";
+    }
+    /* string 1, char 14 */
+    7.0806100218%, 7.6242723312% {
+        content: "Mon nom est .";
+    }
+    /* string 1, char 15 */
+    7.6252723312%, 8.1689346405% {
+        content: "Mon nom est ..";
+    }
+    /* string 1, char 16 */
+    8.1699346405%, 8.7135969499% {
+        content: "Mon nom est ...";
+    }
+    /* string 1, char 17 */
+    8.7145969499%, 9.2582592593% {
+        content: "Mon nom est ..";
+    }
+    /* string 1, char 18 */
+    9.2592592593%, 9.8029215686% {
+        content: "Mon nom est .";
+    }
+    /* string 1, char 19 */
+    9.8039215686%, 10.347583878% {
+        content: "Mon nom est ";
+    }
+    /* string 1, char 20 */
+    10.348583878%, 10.8922461874% {
+        content: "Mon nom est";
+    }
+    /* string 1, char 21 */
+    10.8932461874%, 11.4369084967% {
+        content: "Mon nom es";
+    }
+    /* string 1, char 22 */
+    11.4379084967%, 23.310546841% {
+        content: "Mon nom e";
+    }
+    /* string 1, char 23 */
+    23.311546841%, 23.7462766885% {
+        content: "Mon nom ";
+    }
+    /* string 1, char 24 */
+    23.7472766885%, 24.1820065359% {
+        content: "Mon nom";
+    }
+    /* string 1, char 25 */
+    24.1830065359%, 24.6177363834% {
+        content: "Mon no";
+    }
+    /* string 1, char 26 */
+    24.6187363834%, 25.0534662309% {
+        content: "Mon n";
+    }
+    /* string 1, char 27 */
+    25.0544662309%, 25.4891960784% {
+        content: "Mon ";
+    }
+    /* string 1, char 28 */
+    25.4901960784%, 25.9249259259% {
+        content: "Mon";
+    }
+    /* string 1, char 29 */
+    25.9259259259%, 26.3606557734% {
+        content: "Mo";
+    }
+    /* string 1, char 30 */
+    26.3616557734%, 26.7963856209% {
+        content: "M";
+    }
+    /* string 1, char 31 */
+    26.7973856209%, 27.2321154684% {
+        content: ".";
+    }
+    /* string 1, char 32 */
+    27.2331154684%, 27.6678453159% {
+        content: "D";
+    }
+    /* string 1, char 33 */
+    27.6688453159%, 28.1035751634% {
+        content: "DO";
+    }
+    /* string 1, char 34 */
+    28.1045751634%, 28.5393050109% {
+        content: "DOU";
+    }
+    /* string 1, char 35 */
+    28.5403050109%, 28.9750348584% {
+        content: "DOUN";
+    }
+    /* string 1, char 36 */
+    28.9760348584%, 29.4107647059% {
+        content: "DOUNI";
+    }
+    /* string 1, char 37 */
+    29.4117647059%, 29.8464945534% {
+        content: "DOUNIA";
+    }
+    /* string 1, char 38 */
+    29.8474945534%, 30.2822244009% {
+        content: "DOUNIA ";
+    }
+    /* string 1, char 39 */
+    30.2832244009%, 30.7179542484% {
+        content: "DOUNIA";
+    }
+    /* string 1, char 40 */
+    30.7189542484%, 31.1536840959% {
+        content: "DOUNI";
+    }
+    /* string 1, char 41 */
+    31.1546840959%, 31.5894139434% {
+        content: "DOUN";
+    }
+    /* string 1, char 42 */
+    31.5904139434%, 32.0251437908% {
+        content: "DOU";
+    }
+    /* string 1, char 43 */
+    32.0261437908%, 32.4608736383% {
+        content: "DO";
+    }
+    /* string 1, char 44 */
+    32.4618736383%, 37.907496732% {
+        content: "D";
+    }
+    /* string 2, char 1 */
+    37.908496732%, 38.4521590414% {
+        content: ".";
+    }
+
+}
+@-webkit-keyframes beam-blink {
+    75% {
+        border-color: transparent;
+    }
+}
+@keyframes beam-blink {
+    75% {
+        border-color: transparent;
+    }
+}
+* {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.matrix-row {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: #000;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0)), linear-gradient(to bottom, #000, #000 2px, #111 3px);
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: cover, 100% 3px;
+    font-size: calc(10px + 2vw);
+    font-family: 'VT323', monospace, sans-serif;
+    color: #3f3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.matrix-row::after {
+    content: ".";
+    position: relative;
+    top: -13px;
+    display: inline-block;
+    padding-right: 3px;
+    padding-right: calc(3px + 0.1vw);
+    border-right: 10px solid rgba(51, 255, 51, 0.75);
+    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+    white-space: nowrap;
+    -webkit-animation: typed 18.36s linear 1s infinite, beam-blink 1s infinite;
+    animation: typed 18.36s linear 1s infinite, beam-blink 1s infinite;
+}
+@media (max-width: 575px) {
+    .matrix-row::after {
+        top: -33px;
+    }
+}
+
+
+/*Bouton Télécharger cv */
+.stretch, .button:after, .button:before {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.button {
+    background: #343a40;
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #343a40), color-stop(100%, black));
+    background-image: -moz-linear-gradient(left, #343a40, black);
+    background-image: -webkit-linear-gradient(left, #343a40, black);
+    background-image: linear-gradient(to right, #343a40, black);
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    -moz-transition: opacity 300ms;
+    -o-transition: opacity 300ms;
+    -webkit-transition: opacity 300ms;
+    transition: opacity 300ms;
+    padding: 10px;
+    color: #FAF15D;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    cursor: pointer;
+    font-family: "Helvetica NeueThin ";
+    z-index: 99;
+}
+.button:after {
+    -moz-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
+    -webkit-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
+    box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
+    background: green;
+    content: "";
+    height: 2px;
+    opacity: 0;
+}
+.button:before {
+    content: "";
+    opacity: 0;
+}
+.button:hover {
+    -webkit-animation: glitch 750ms infinite;
+}
+.button:hover:before {
+    opacity: 1;
+}
+.button:hover:after {
+    -webkit-animation: scan 2s infinite;
+    opacity: 1;
+}
+.my-btn-cv{
+    align-items: end;
+    justify-content: flex-end;
+}
+
+@-webkit-keyframes glitch {
+    0% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+    }
+    5% {
+        -moz-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        transform: skewX(2deg);
+        opacity: 0.75;
+    }
+    10% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+        opacity: 1;
+    }
+    15% {
+        -moz-transform: skewX(-5deg);
+        -ms-transform: skewX(-5deg);
+        -webkit-transform: skewX(-5deg);
+        transform: skewX(-5deg);
+        opacity: 0.75;
+    }
+    20% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+        opacity: 1;
+    }
+    45% {
+        -moz-transform: skewX(3deg);
+        -ms-transform: skewX(3deg);
+        -webkit-transform: skewX(3deg);
+        transform: skewX(3deg);
+        opacity: 0.75;
+    }
+    50% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+        opacity: 1;
+    }
+    55% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+        opacity: 0.75;
+    }
+    60% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+        opacity: 1;
+    }
+    75% {
+        -moz-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        transform: skewX(2deg);
+    }
+    80% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+    }
+    85% {
+        -moz-transform: skewX(-8deg);
+        -ms-transform: skewX(-8deg);
+        -webkit-transform: skewX(-8deg);
+        transform: skewX(-8deg);
+        opacity: 0.75;
+    }
+    90% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+        opacity: 1;
+    }
+    100% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+    }
+}
+@-webkit-keyframes scan {
+    0% {
+        top: 0%;
+    }
+    50% {
+        top: 97%;
+    }
+    100% {
+        top: 0%;
+    }
+}
+
+a:link, a:visited
+{
+    color: white;
+    text-decoration: none;
+}
+
+/*Animations boutons compétences*/
+.border-animation {
+    --border-width: 0.1em;
+    --animation-speed: 0.5s;
+    --color: #ffffff;
+    color: var(--color);
+    position: relative;
+    display: inline-block;
+    font-size: 4em;
+    line-height: 1em;
+    -webkit-transform: scale(1, 0.8);
+    transform: scale(1, 0.8);
+    border: var(--border-width) solid transparent;
+}
+.border-animation .border-animation__inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: "Helvetica NeueThin";
+    cursor: pointer;
+    padding: 10px;
+    background: #333;
+    z-index: 1;
+    border: solid var(--border-width) transparent;
+}
+.border-animation:before, .border-animation:after {
+    content: '';
+    position: absolute;
+    background: var(--color);
+}
+.border-animation:focus:before, .border-animation:hover:before {
+    -webkit-animation: beforeBorders var(--animation-speed) forwards ease-in-out;
+    animation: beforeBorders var(--animation-speed) forwards ease-in-out;
+}
+.border-animation:focus:after, .border-animation:hover:after {
+    -webkit-animation: afterBorders var(--animation-speed) forwards ease-in-out;
+    animation: afterBorders var(--animation-speed) forwards ease-in-out;
+}
+.border-animation:focus, .border-animation:hover {
+    -webkit-animation: borderColors var(--animation-speed) steps(1) forwards;
+    animation: borderColors var(--animation-speed) steps(1) forwards;
+    outline: none;
+}
+.border-animation:focus .border-animation__inner, .border-animation:hover .border-animation__inner {
+    -webkit-animation: background calc(var(--animation-speed) / 5 * 3) forwards ease-in-out;
+    animation: background calc(var(--animation-speed) / 5 * 3) forwards ease-in-out;
+    -webkit-animation-delay: calc(var(--animation-speed) / 5 * 2);
+    animation-delay: calc(var(--animation-speed) / 5 * 2);
+}
+
+@-webkit-keyframes beforeBorders {
+    0% {
+        top: calc(var(--border-width) * -1);
+        left: 50%;
+        bottom: auto;
+        right: auto;
+        width: 0;
+        height: var(--border-width);
+    }
+    33% {
+        top: calc(var(--border-width) * -1);
+        left: calc(var(--border-width) * -1);
+        bottom: auto;
+        right: auto;
+        width: calc(var(--border-width) + 50%);
+        height: var(--border-width);
+    }
+    66% {
+        top: calc(var(--border-width) * -1);
+        left: calc(var(--border-width) * -1);
+        bottom: auto;
+        right: auto;
+        width: var(--border-width);
+        height: calc((var(--border-width) * 2) + 100%);
+    }
+    100% {
+        top: auto;
+        left: calc(var(--border-width) * -1);
+        bottom: calc(var(--border-width) * -1);
+        right: auto;
+        width: calc(var(--border-width) + 50%);
+        height: calc((var(--border-width) * 2) + 100%);
+    }
+}
+
+@keyframes beforeBorders {
+    0% {
+        top: calc(var(--border-width) * -1);
+        left: 50%;
+        bottom: auto;
+        right: auto;
+        width: 0;
+        height: var(--border-width);
+    }
+    33% {
+        top: calc(var(--border-width) * -1);
+        left: calc(var(--border-width) * -1);
+        bottom: auto;
+        right: auto;
+        width: calc(var(--border-width) + 50%);
+        height: var(--border-width);
+    }
+    66% {
+        top: calc(var(--border-width) * -1);
+        left: calc(var(--border-width) * -1);
+        bottom: auto;
+        right: auto;
+        width: var(--border-width);
+        height: calc((var(--border-width) * 2) + 100%);
+    }
+    100% {
+        top: auto;
+        left: calc(var(--border-width) * -1);
+        bottom: calc(var(--border-width) * -1);
+        right: auto;
+        width: calc(var(--border-width) + 50%);
+        height: calc((var(--border-width) * 2) + 100%);
+    }
+}
+@-webkit-keyframes afterBorders {
+    0% {
+        top: calc(var(--border-width) * -1);
+        left: auto;
+        bottom: auto;
+        right: 50%;
+        width: 0;
+        height: var(--border-width);
+    }
+    33% {
+        top: calc(var(--border-width) * -1);
+        left: auto;
+        bottom: auto;
+        right: calc(var(--border-width) * -1);
+        width: calc(var(--border-width) + 50%);
+        height: var(--border-width);
+    }
+    66% {
+        top: calc(var(--border-width) * -1);
+        left: auto;
+        bottom: auto;
+        right: calc(var(--border-width) * -1);
+        width: var(--border-width);
+        height: calc((var(--border-width) * 2) + 100%);
+    }
+    100% {
+        top: auto;
+        left: auto;
+        bottom: calc(var(--border-width) * -1);
+        right: calc(var(--border-width) * -1);
+        width: calc(var(--border-width) + 50%);
+        height: calc((var(--border-width) * 2) + 100%);
+    }
+}
+@keyframes afterBorders {
+    0% {
+        top: calc(var(--border-width) * -1);
+        left: auto;
+        bottom: auto;
+        right: 50%;
+        width: 0;
+        height: var(--border-width);
+    }
+    33% {
+        top: calc(var(--border-width) * -1);
+        left: auto;
+        bottom: auto;
+        right: calc(var(--border-width) * -1);
+        width: calc(var(--border-width) + 50%);
+        height: var(--border-width);
+    }
+    66% {
+        top: calc(var(--border-width) * -1);
+        left: auto;
+        bottom: auto;
+        right: calc(var(--border-width) * -1);
+        width: var(--border-width);
+        height: calc((var(--border-width) * 2) + 100%);
+    }
+    100% {
+        top: auto;
+        left: auto;
+        bottom: calc(var(--border-width) * -1);
+        right: calc(var(--border-width) * -1);
+        width: calc(var(--border-width) + 50%);
+        height: calc((var(--border-width) * 2) + 100%);
+    }
+}
+@-webkit-keyframes borderColors {
+    0% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    33% {
+        border-top-color: var(--color);
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    66% {
+        border-top-color: var(--color);
+        border-right-color: var(--color);
+        border-bottom-color: transparent;
+        border-left-color: var(--color);
+    }
+    100% {
+        border-top-color: var(--color);
+        border-right-color: var(--color);
+        border-bottom-color: var(--color);
+        border-left-color: var(--color);
+    }
+}
+@keyframes borderColors {
+    0% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    33% {
+        border-top-color: var(--color);
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    66% {
+        border-top-color: var(--color);
+        border-right-color: var(--color);
+        border-bottom-color: transparent;
+        border-left-color: var(--color);
+    }
+    100% {
+        border-top-color: var(--color);
+        border-right-color: var(--color);
+        border-bottom-color: var(--color);
+        border-left-color: var(--color);
+    }
+}
+@-webkit-keyframes background {
+    to {
+        background: #555;
+        text-shadow: 0 0.1em 0.1em #111;
+    }
+}
+@keyframes background {
+    to {
+        background: #555;
+        text-shadow: 0 0.1em 0.1em #111;
+    }
+}
+@media (min-width: 850px) {
+    body {
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+}
+@media (min-width: 1200px) {
+    .border-animation {
+        font-size: 17px;
+    }
+}
+
+
+
