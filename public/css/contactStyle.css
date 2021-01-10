@@ -1,0 +1,528 @@
+/*Image glitch*/
+.glitch-2{
+    width: 100vw;
+    height: 80vh;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.glitch-2 .glitch__item {
+    background-image: url("../img/pexels-василь-вовк-4405368.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.glitch-2 .glitch__item:nth-child(n+2) {
+    opacity: 0;
+    animation-duration: var(--time-anim);
+    animation-delay: var(--delay-anim);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.glitch-2 .glitch__item:nth-child(2) {
+    background-color: var(--blend-color-2);
+    background-blend-mode: var(--blend-mode-2);
+    animation-name: glitch-anim-2;
+}
+.glitch-2 .glitch__item:nth-child(2) {
+    background-color: var(--blend-color-3);
+    background-blend-mode: var(--blend-mode-3);
+    animation-name: glitch-anim-3;
+}
+.glitch-2 .glitch__item:nth-child(4) {
+    background-color: var(--blend-color-4);
+    background-blend-mode: var(--blend-mode-4);
+    animation-name: glitch-anim-4;
+}
+.glitch-2 .glitch__item:nth-child(5) {
+    background-color: var(--blend-color-5);
+    background-blend-mode: var(--blend-mode-5);
+    animation-name: glitch-anim-flash;
+}
+@keyframes glitch-anim-flash {
+    0%, 5% {
+        opacity: 0.2;
+        transform: translate3d(var(--glitch-horizontal), var(--glitch-height), 0);
+    }
+    5.5%, 100% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.glitch-2 .glitch__title {
+    font-family: "Helvetica NeueThin";
+    font-size: 100px;
+    color: #ffffff;
+    position: relative;
+    text-transform: uppercase;
+}
+.glitch-2 .glitch__title:before, .glitch .glitch__title:after {
+    content: "Contactez-moi";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.glitch-2 .glitch__title:before {
+    left: 2px;
+    text-shadow: -1px 0 #00ffea;
+    clip: rect(24px, 550px, 90px, 0);
+    animation: glitch-anim 2s linear infinite alternate-reverse;
+}
+.glitch-2 .glitch__title:after {
+    left: -2px;
+    text-shadow: -1px 0 #fe3a7f;
+    clip: rect(85px, 550px, 140px, 0);
+    animation: glitch-anim 2s 1s linear infinite alternate-reverse;
+}
+@keyframes glitch-anim {
+    0% {
+        clip: rect(68px, 9999px, 72px, 0);
+    }
+    5% {
+        clip: rect(22px, 9999px, 112px, 0);
+    }
+    10% {
+        clip: rect(14px, 9999px, 8px, 0);
+    }
+    15% {
+        clip: rect(14px, 9999px, 45px, 0);
+    }
+    20% {
+        clip: rect(53px, 9999px, 163px, 0);
+    }
+    25% {
+        clip: rect(63px, 9999px, 75px, 0);
+    }
+    30% {
+        clip: rect(100px, 9999px, 11px, 0);
+    }
+    35% {
+        clip: rect(88px, 9999px, 134px, 0);
+    }
+    40% {
+        clip: rect(86px, 9999px, 56px, 0);
+    }
+    45% {
+        clip: rect(45px, 9999px, 11px, 0);
+    }
+    50% {
+        clip: rect(138px, 9999px, 2px, 0);
+    }
+    55% {
+        clip: rect(15px, 9999px, 124px, 0);
+    }
+    60% {
+        clip: rect(79px, 9999px, 41px, 0);
+    }
+    65% {
+        clip: rect(131px, 9999px, 79px, 0);
+    }
+    70% {
+        clip: rect(54px, 9999px, 38px, 0);
+    }
+    75% {
+        clip: rect(14px, 9999px, 50px, 0);
+    }
+    80% {
+        clip: rect(118px, 9999px, 163px, 0);
+    }
+    85% {
+        clip: rect(64px, 9999px, 113px, 0);
+    }
+    90% {
+        clip: rect(145px, 9999px, 128px, 0);
+    }
+    95% {
+        clip: rect(135px, 9999px, 69px, 0);
+    }
+    100% {
+        clip: rect(44px, 9999px, 114px, 0);
+    }
+}
+
+@keyframes glitch-anim-2 {
+    0% {
+        opacity: 1;
+        transform: translate3d(var(--gap-horizontal), 0, 0);
+        -webkit-clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
+        clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
+    }
+    2% {
+        -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
+        clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
+    }
+    4% {
+        -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
+        clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
+    }
+    6% {
+        -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+        clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+    }
+    8% {
+        -webkit-clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
+        clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
+    }
+    10% {
+        -webkit-clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
+        clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
+    }
+    12% {
+        -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
+        clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
+    }
+    14% {
+        -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+        clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+    }
+    16% {
+        -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+        clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+    }
+    18% {
+        -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+        clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+    }
+    20% {
+        -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+        clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+    }
+    21.9% {
+        opacity: 1;
+        transform: translate3d(var(--gap-horizontal), 0, 0);
+    }
+    22%, 100% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+        -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    }
+}
+@keyframes glitch-anim-3 {
+    0% {
+        opacity: 1;
+        transform: translate3d(calc(-1 * var(--gap-horizontal)), 0, 0);
+        -webkit-clip-path: polygon(0 25%, 100% 25%, 100% 30%, 0 30%);
+        clip-path: polygon(0 25%, 100% 25%, 100% 30%, 0 30%);
+    }
+    3% {
+        -webkit-clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
+        clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
+    }
+    5% {
+        -webkit-clip-path: polygon(0 5%, 100% 5%, 100% 20%, 0 20%);
+        clip-path: polygon(0 5%, 100% 5%, 100% 20%, 0 20%);
+    }
+    7% {
+        -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+        clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+    }
+    9% {
+        -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 40%, 0 40%);
+        clip-path: polygon(0 40%, 100% 40%, 100% 40%, 0 40%);
+    }
+    11% {
+        -webkit-clip-path: polygon(0 52%, 100% 52%, 100% 59%, 0 59%);
+        clip-path: polygon(0 52%, 100% 52%, 100% 59%, 0 59%);
+    }
+    13% {
+        -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+        clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+    }
+    15% {
+        -webkit-clip-path: polygon(0 75%, 100% 75%, 100% 75%, 0 75%);
+        clip-path: polygon(0 75%, 100% 75%, 100% 75%, 0 75%);
+    }
+    17% {
+        -webkit-clip-path: polygon(0 65%, 100% 65%, 100% 40%, 0 40%);
+        clip-path: polygon(0 65%, 100% 65%, 100% 40%, 0 40%);
+    }
+    19% {
+        -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 50%, 0 50%);
+        clip-path: polygon(0 45%, 100% 45%, 100% 50%, 0 50%);
+    }
+    20% {
+        -webkit-clip-path: polygon(0 14%, 100% 14%, 100% 33%, 0 33%);
+        clip-path: polygon(0 14%, 100% 14%, 100% 33%, 0 33%);
+    }
+    21.9% {
+        opacity: 1;
+        transform: translate3d(calc(-1 * var(--gap-horizontal)), 0, 0);
+    }
+    22%, 100% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+        -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    }
+}
+@keyframes glitch-anim-4 {
+    0% {
+        opacity: 1;
+        transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0) scale3d(-1, -1, 1);
+        -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 3%, 0 3%);
+        clip-path: polygon(0 1%, 100% 1%, 100% 3%, 0 3%);
+    }
+    1.5% {
+        -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 9%, 0 9%);
+        clip-path: polygon(0 10%, 100% 10%, 100% 9%, 0 9%);
+    }
+    2% {
+        -webkit-clip-path: polygon(0 5%, 100% 5%, 100% 6%, 0 6%);
+        clip-path: polygon(0 5%, 100% 5%, 100% 6%, 0 6%);
+    }
+    2.5% {
+        -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+        clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+    }
+    3% {
+        -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 10%, 0 10%);
+        clip-path: polygon(0 10%, 100% 10%, 100% 10%, 0 10%);
+    }
+    5% {
+        -webkit-clip-path: polygon(0 30%, 100% 30%, 100% 25%, 0 25%);
+        clip-path: polygon(0 30%, 100% 30%, 100% 25%, 0 25%);
+    }
+    5.5% {
+        -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 16%, 0 16%);
+        clip-path: polygon(0 15%, 100% 15%, 100% 16%, 0 16%);
+    }
+    7% {
+        -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 39%, 0 39%);
+        clip-path: polygon(0 40%, 100% 40%, 100% 39%, 0 39%);
+    }
+    8% {
+        -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
+        clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
+    }
+    9% {
+        -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 55%, 0 55%);
+        clip-path: polygon(0 60%, 100% 60%, 100% 55%, 0 55%);
+    }
+    10.5% {
+        -webkit-clip-path: polygon(0 30%, 100% 30%, 100% 31%, 0 31%);
+        clip-path: polygon(0 30%, 100% 30%, 100% 31%, 0 31%);
+    }
+    11% {
+        -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 69%, 0 69%);
+        clip-path: polygon(0 70%, 100% 70%, 100% 69%, 0 69%);
+    }
+    13% {
+        -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 41%, 0 41%);
+        clip-path: polygon(0 40%, 100% 40%, 100% 41%, 0 41%);
+    }
+    14% {
+        -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 75%, 0 75%);
+        clip-path: polygon(0 80%, 100% 80%, 100% 75%, 0 75%);
+    }
+    14.5% {
+        -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 51%, 0 51%);
+        clip-path: polygon(0 50%, 100% 50%, 100% 51%, 0 51%);
+    }
+    15% {
+        -webkit-clip-path: polygon(0 90%, 100% 90%, 100% 90%, 0 90%);
+        clip-path: polygon(0 90%, 100% 90%, 100% 90%, 0 90%);
+    }
+    16% {
+        -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+        clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+    }
+    18% {
+        -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 99%, 0 99%);
+        clip-path: polygon(0 100%, 100% 100%, 100% 99%, 0 99%);
+    }
+    20% {
+        -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 71%, 0 71%);
+        clip-path: polygon(0 70%, 100% 70%, 100% 71%, 0 71%);
+    }
+    21.9% {
+        opacity: 1;
+        transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0) scale3d(-1, -1, 1);
+    }
+    22%, 100% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+        -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    }
+}
+
+
+
+/*Formulaire de contacte*/
+#contact {
+    background: linear-gradient(90deg, rgba(7,8,7,1) 0%, rgba(65,65,78,1) 35%, rgba(3,69,21,1) 100%);
+}
+#contact::after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 90%;
+    left: 5%;
+    bottom: 0;
+    position: absolute;
+    -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 100%;
+    z-index: -1;
+}
+
+#contact h1 {
+    font-size: 1.75em;
+    color: white;
+    text-shadow: 0 0.06em 0 snow;
+    position: relative;
+    padding-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.p-form{
+    font-size: 1.5rem;
+}
+.contactbutton {
+    background: #0f9b0f;
+    -webkit-box-shadow: 1px 1px 0 0 darkgreen,2px 2px 0 0 darkgreen,3px 3px 0 0 darkgreen;
+    box-shadow: 1px 1px 0 0 darkgreen,2px 2px 0 0 darkgreen,3px 3px 0 0 darkgreen;
+    text-align: center;
+    display: block;
+    width: 0%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.contactbutton:hover {
+    -webkit-box-shadow: 1px 1px 0 0 darkgreen,0px 0px 0 0 darkgreen,0px 0px 0 0 darkgreen;
+    box-shadow: 1px 1px 0 0 darkgreen,0px 0px 0 0 darkgreen,0px 0px 0 0 darkgreen;
+    margin-top: 22px;
+    margin-left: 2px;
+    margin-bottom: 0px;
+}
+.mail {
+    margin-top: 11px;
+    font-size: 15px;
+    display: inline-block;
+    border-top: 2em solid transparent;
+    border-left: 2.6em solid darkgreen;
+    height: 0;
+    width: 0;
+    position: relative;
+}
+.mail:before {
+    content: '';
+    top: -2.5em;
+    left: -2.95em;
+    display: block;
+    position: absolute;
+    border-top: 1.2em solid darkgreen;
+    border-left: 1.6em solid transparent;
+    border-right: 1.6em solid transparent;
+    border-bottom: 1em solid transparent;
+    font-size: 0.8em;
+}
+.mail::after {
+    display: block;
+    content: "";
+    position: absolute;
+    border-top: 2em solid transparent;
+    border-right: 2.6em solid darkgreen;
+    height: 0;
+    width: 0;
+    left: -2.18em;
+    bottom: 0;
+}
+#checkcontact{
+    position: absolute;
+    left: -9999px;
+}
+form{
+    overflow: hidden;
+    max-height: 0px;
+    -webkit-transition: all linear 1s;
+    -moz-transition: all linear 1s;
+    -o-transition: all linear 1s;
+    -ms-transition: all linear 1s;
+    transition: all linear 1s;
+}
+
+form  div{ /*Selection des <div>  contenu dans le <form>*/
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    padding: 5px;
+}
+form label{
+    font-family: "Helvetica NeueBd";
+    font-size: 16px;
+    color: snow;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+form label:after{
+    content: " *";
+    color: #0f9b0f;
+}
+form input{
+    font-family: "Helvetica NeueThin";
+    font-size: 17px;
+    padding: 5px;
+}
+form textarea{
+    font-family: "Helvetica NeueThin";
+    font-size: 20px;
+}
+#checkcontact:checked + form{
+    max-height: 1000px;
+}
+#g-recaptcha > div:nth-child(1) > div:nth-child(1){
+    margin: 0;
+}
+.champs{
+    font-size: 16px;
+    font-family: "Helvetica NeueBD";
+    color: snow;
+}
+#contact > div:nth-child(2) > div:nth-child(1) > form:nth-child(3) > div:nth-child(8){
+    width: 30%;
+}
+@media (max-width: 500px){
+    #contact {
+        width: 100%;
+    }
+    .input_wrapper label {
+        line-height: 3.5em;
+        font-size: 0.8em;
+    }
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #000000 0%, #0f9b0f  51%, #000000  100%)
+}
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}

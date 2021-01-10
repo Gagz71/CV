@@ -442,7 +442,7 @@
     -o-transition: opacity 300ms;
     -webkit-transition: opacity 300ms;
     transition: opacity 300ms;
-    padding: 10px;
+    padding: 13px;
     color: #FAF15D;
     font-weight: bold;
     letter-spacing: 0.05em;
@@ -450,8 +450,10 @@
     overflow: hidden;
     position: absolute;
     cursor: pointer;
-    font-family: "Helvetica NeueThin ";
+    font-family: "Helvetica NeueThin";
+    font-size: 15px;
     z-index: 99;
+    margin-bottom: 5px;
 }
 .button:after {
     -moz-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
@@ -615,7 +617,7 @@ a:link, a:visited
     width: 100%;
     font-family: "Helvetica NeueThin";
     cursor: pointer;
-    padding: 10px;
+    padding: 15px;
     background: #333;
     z-index: 1;
     border: solid var(--border-width) transparent;
@@ -858,5 +860,157 @@ a:link, a:visited
     }
 }
 
+/*Partie projets réalisés*/
+.title-green-gradient{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(26,121,9,1) 53%, rgba(0,255,43,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 45px;
+    letter-spacing: 10px;
+}
 
 
+/*Effet gallerie photo*/
+.card-effect {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 59rem;
+    width: 55rem;
+    background: #000;
+    margin: 5rem;
+    -moz-perspective: 200rem;
+    perspective: 200rem;
+}
+
+.card-effect .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card-effect .image img {
+    width: 100%;
+    transition: .5s;
+}
+.card-effect:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.card-effect .details-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background: url("../img/MomsBox-capture/ruban_dore-momsbox-vertical--optimise.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.card-effect .details-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background: url("../img/Sans titre - 2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.card-effect:hover .details-1 {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.card-effect:hover .details-2 {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.card-effect .details .center {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card-effect .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: #262626;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Helvetica NeueBd";
+}
+.card-effect .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+    text-transform: initial;
+}
+.card-effect .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
+.description-list{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.card-effect .details .center ul {
+    padding: 0;
+    display: table;
+}
+.card-effect .details .center ul li {
+    font-weight: 800;
+    list-style: none;
+}
+
+.resize-i{
+    font-size: 30px;
+}
+
+/*Galerie overlay*/
+.min-img{
+    width: 30%;
+    cursor: zoom-in;
+}
+.overlay-2{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.overlay-2 .close{  /*propriété de la croix pr fermer */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+.overlay-2 img{
+}
+
+
+
+/*Media Queries*/
+/*Partie responsive*/
+@media(min-width: 600px){
+
+}
+
+@media(min-width: 1200px){
+
+
+}

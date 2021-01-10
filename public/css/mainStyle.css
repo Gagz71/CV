@@ -39,6 +39,10 @@ body{
     margin: 0;
     padding: 0;
 }
+.bg-green-dark{
+    background: rgb(7,8,7);
+    background: linear-gradient(90deg, rgba(7,8,7,1) 0%, rgba(65,65,78,1) 35%, rgba(3,69,21,1) 100%);
+}
 canvas {
     display: block;
     position:absolute;
@@ -69,8 +73,9 @@ canvas {
     color: green;
     letter-spacing: 1em;
     position: absolute;
-    left: 20rem;
+    left: 28rem;
     font-weight: bold;
+    font-size: 20px;
 }
 
 /* Our mixin positions a copy of our text
@@ -348,6 +353,24 @@ skew to change the 'thickness' of the glitch.*/
     background-position: bottom;
     position: relative;
 }
+.bg-custom-2{
+    background-image: url("../img/030d79644f497a8e06c7ed38f6cd550d.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    background-position: center;
+    position: relative;
+}
+.bg-custom-3{
+    background-image: url("../img/pexels-василь-вовк-4405368.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    background-position: center;
+    position: relative;
+}
 .overlay{
     display: flex;
     position: absolute;
@@ -358,14 +381,23 @@ skew to change the 'thickness' of the glitch.*/
     background-color: #000000b3;
 }
 
+.p-who-am-i{
+    font-size: 1.75rem;
+    padding: 25px;
+}
 /*Partie compétences*/
+.circle{
+    width: 15%;
+}
 .img-circle{
-    width : 150px; height : 150px;
     border: 1px groove forestgreen;
     -moz-border-radius : 75px;
     -webkit-border-radius : 75px;
-    border-radius : 75px;
     margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
 }
 
 /*logo html - css*/
@@ -465,6 +497,84 @@ skew to change the 'thickness' of the glitch.*/
     display : inline-block;
 }
 
-.target .normal{
-    display: none;
+.circle_side{
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+.circle_side-back{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.circle:hover .circle_side-front-1{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.circle:hover .circle_side-front-2{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.circle:hover .circle_side-front-3{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.circle:hover .circle_side-front-4{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.circle:hover .circle_side-front-5{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.circle:hover .circle_side-front-6{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.circle:hover .circle_side-front-7{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.circle:hover .circle_side-front-8{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.circle:hover .circle_side-front-9{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.circle:hover .circle_side-front-10{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.circle:hover .circle_side-front-11{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.circle:hover .circle_side-front-12{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.circle:hover .circle_side-back{
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+}
+.circle_cta{
+    position: relative;
+   bottom: 100px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 13px;
+    list-style: none;
+}
+li::before {
+    content: "•";
+    color: green;
 }

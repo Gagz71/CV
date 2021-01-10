@@ -78,70 +78,53 @@ var update = function()
 update();
 
 
-//Animations progress bar circulaire compétences
-//Fonction permettant d'ouvrir la div
-function openView(){
+//Animation gallerie portfolio
+let images = document.querySelectorAll('.min-img');
 
-    //Suppression de l'ancien écouteur d'évènement
-    $('.target').off();
+//On parcours le tableau contenant toutes les images pour appliquer un écouteur d'évènement sur chacune d'entre elle
+images.forEach(function(img){
+    img.addEventListener('click', function(){
 
-    //Disparition du petit texte avec effet de fondu
-    $('.target .tiny').fadeOut();
-
-    //Animations de déplacement et d'aggrandissement de la div
-    $('.target').animate({
-        'top': window.innerHeight/4,  //window.innerHeight dans la console permet d'avoir la hauteur de la fenêtre active en px
-        'left': window.innerWidth/4 //window.innerWidth   ""  la largeur ""
-    }, 750).animate({
-        'width': window.innerWidth/2,
-        'height': 450
-    }, 750, function(){
-
-        //Apparition du grand texte avec effet fondu
-        $('.target .normal').fadeIn();
-
-        //Mise en place d'un écouteur d'évènement sur la cible permettant de la faire fermer au click
-        $('.target').click(function(){
-
-            //Fermeture de la div
-            closeView();
-        });
+        //on appel la fonction servant à afficher l'image dont le nom est stocké dans l'attribut "data-image" de la vignette qui a été cliquée (this)
+        displayImage(this.dataset.image);
     });
-
-}
-
-//Fonction permettant de fermer la div
-function closeView(){
-
-    //Suppression de l'ancien écouteur d'évènement
-    $('.target').off();
-
-    //Disparition du grand texte
-    $('.target .normal').hide();
-
-    //Animations de rétrécissement et de déplacement de la div
-    $('.target').animate({
-        'width': '100px',
-        'height': '50px'
-    }, 750).animate({
-        'top': '25px',
-        'left': '25px'
-    }, 750, function(){
-
-        //Apparition du petit texte
-        $('.tiny').fadeIn();
-
-        $('.target').click(function(){
-            openView();
-        });
-    });
-}
-
-$('.target').click(function(){
-    openView();
 });
 
-//Animations compétences
+//Création d'une fonction qui affiche une image dans un overlay avec une croix de fermeture
+function displayImage(imageName){
+
+    //Création d'une <div class="overlay"> insérer au body
+    let overlay = document.createElement('div');
+    overlay.classList.add('overlay-2');
+    document.querySelector('body').prepend(overlay);
+
+    //Création de l'image
+    let image = document.createElement('img');
+    image.src = "img/" + imageName;
+    overlay.append(image); //Insertion de l'image ds l'overlay
+
+    //Création de la croix pour fermeture <div class="close">
+    let closeButton = document.createElement('div');
+    closeButton.classList.add('close');
+    closeButton.textContent = "X";
+    overlay.append(closeButton); //Insertion croix ds l'overlay
+
+    //Application d'un écouteur dévènement sur la croix
+    closeButton.addEventListener('click', function(){
+        removeImage(); //appel de la fonction permettant de supprimer l'overlay
+    });
+}
+
+//Création d'une fonction qui supprimera l'overlay
+function removeImage(){
+
+    //Raccourci vers l'overlay
+    let overlay = document.querySelector('.overlay-2'); //une variable d'une fonction n'existe que dans la fonction donc on peut créer autant de variable overlay dans autant de fonctions qu'on veut.
+
+    //Suppression de l'overlay et de son contenu
+    overlay.parentElement.removeChild(overlay);
+
+}
 
 
 

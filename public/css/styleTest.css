@@ -46,15 +46,6 @@ body {
 	}
 }
 
-.card {
-	flex: initial;
-	position: relative;
-	height: 52rem;
-	width: 48rem;
-	-moz-perspective: 200rem;
-	perspective: 200rem;
-	margin: 2rem;
-}
 .card__side {
 	height: 52rem;
 	transition: all 0.8s ease;

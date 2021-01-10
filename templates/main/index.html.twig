@@ -4,13 +4,13 @@
 
 {% block body %}
 
-    <div class="container-fluid ">
+    <div class="container-fluid bg-dark">
         <div id="app">
             <div id="wrapper">
-                <!-- Make sure data-text equals the text you put inside the tags. -->
-                <h1 class="glitch" data-text="DOUNIA MANHOULI">DOUNIA MANHOULI</h1>
-                <span class="sub">Développeuse web junior</span>
-            </div>
+                    <!-- Make sure data-text equals the text you put inside the tags. -->
+                    <h1 class="glitch" data-text="DOUNIA MANHOULI">DOUNIA MANHOULI</h1>
+                    <span class="sub">Développeuse web junior</span>
+                </div>
         </div>
 
         <div class="row  matrix-row flex-column">
@@ -20,7 +20,7 @@
         </div>
 
         <div class="row bg-dark">
-            <p class="lead text-white">
+            <p class="lead text-white p-who-am-i">
                 Je m'apelle Dounia Manhouli et je suis Développeuse web junior. <br>
                 Passionnée par la réalisation, le développement et l’intégration de projets web, aussi bien côté Front-End que Back-End, c’est avec beaucoup de détermination et de plaisir que j'ai obtenu mon titre professionnel au sein de l'école
                 <a href="https://www.wf3.fr/" title="Voir le site de WebForce3">WebForce3 Bourgogne</a>. <br>
@@ -30,7 +30,7 @@
 
         <div class="row bg-dark">
             <div class="col-6 my-ancre-btn">
-                <a href="#compétence" class="border-animation">
+                <a href="#compétences" class="border-animation">
                     <div class="border-animation__inner">
                     Voir mes compétences</div>
                 </a>
@@ -39,68 +39,344 @@
                 <a href="{{ asset('docs/CV_2020-09-13_Dounia_Manhouli.pdf') }}" class="button" download="mon_cv">Télécharger mon CV</a>
             </div>
         </div>
-
-
-
         <div class=" row bg-custom-1">
             <div class="overlay col-12"></div>
         </div>
+
+        <!--Partie compétences-->
         <div class="row bg-dark flex-column">
-            <div class="col-12">
-                <h1 class="display-4 text-white m-auto" id="compétence">Mes compétences</h1>
+            <div class="col-12 mt-5 mb-5">
+                <h1 class="font-helvetica-med title-green-gradient text-center text-uppercase " id="compétences">Mes compétences</h1>
             </div>
+
             <div class="row">
-                <div class="col-sm-10 m-auto">
-                    <div class="target">
-                        <span class="img-circle img-circle-1 tiny"></span>
-                        <div class="normal">
-                            <ul>
-                                <li>Conception graphique d'un interface Web fonctionnelle</li>
+                <div class="col-11 d-flex m-auto">
+                    <!--HTML/CSS-->
+                    <div class="circle img-circle">
+                        <span class="img-circle img-circle-1 circle_side circle_side-front-1"></span>
+                        <div class="circle_side-back">
+                            <ul class="circle_cta text-center text-white font-helvetica-thin">
+                                <li>Conception graphique d'une interface Web fonctionnelle</li>
                                 <li>Framework Bootstrap</li>
                                 <li>Responsive Design</li>
                                 <li>Accessibilité</li>
                             </ul>
                         </div>
                     </div>
+                    <!--JS-->
+                    <div class="circle img-circle">
+                        <span class="img-circle img-circle-2 circle_side circle_side-front-2"></span>
+                        <div class="circle_side-back">
+                            <ul class="circle_cta text-center text-white font-helvetica-thin">
+                                <li>Animations d'interface Web</li>
+                                <li>Utilisation d'API</li>
+                                <li>Ajax</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--jQuery-->
+                    <div class="circle img-circle">
+                        <span class="img-circle img-circle-3 circle_side circle_side-front-3"></span>
+                        <div class="circle_side-back">
+                            <ul class="circle_cta text-center text-white font-helvetica-thin">
+                                <li>Animations d'interface Web</li>
+                                <li>Utilisation d'API</li>
+                                <li>Ajax</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--php-->
+                    <div class="circle img-circle">
+                        <span class="img-circle img-circle-4  circle_side circle_side-front-4"></span>
+                        <div class="circle_side-back">
+                            <ul class="circle_cta text-center text-white font-helvetica-thin">
+                                <li>Procédural et Programmation Orientée Objet</li>
+                                <li>Protection contre les principales failles web (XSS, Injections SQL, CSRF, etc...)</li>
+                                <li>Architecture MVC</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--MySql-->
+                    <div class="circle img-circle">
+                        <span class="img-circle img-circle-5  circle_side circle_side-front-5"></span>
+                        <div class="circle_side-back">
+                            <ul class="circle_cta text-center text-white font-helvetica-thin">
+                                <li>Requêtes SQL version GUI (Phpmyadmin) et console</li>
+                                <li> Respect des cardinalités, relations, transactions, etc ...</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Symfony-->
+                    <div class="circle img-circle">
+                        <span class="img-circle img-circle-6  circle_side circle_side-front-6"></span>
+                        <div class="circle_side-back">
+                            <ul class="circle_cta text-center text-white font-helvetica-thin">
+                                <li>Version 4. et 5.</li>
+                                <li>Utilisation des principaux composants de Symfony</li>
+                                <li>Doctrine ORM</li>
+                            </ul>
+                        </div>
+                    </div>
 
-
-
-
-
-
-                    <span class="img-circle img-circle-2"></span>
-                    <span class="img-circle img-circle-3"></span>
-                    <span class="img-circle img-circle-4"></span>
-                    <span class="img-circle img-circle-5"></span>
-                    <span class="img-circle img-circle-6"></span>
-                    <span class="img-circle img-circle-7"></span>
-                    <span class="img-circle img-circle-8"></span>
-                    <span class="img-circle img-circle-9"></span>
-                    <span class="img-circle img-circle-10"></span>
-                    <span class="img-circle img-circle-11"></span>
-                    <span class="img-circle img-circle-12"></span>
-{#                    <img src="{{ asset('img/html5css3__024276400_1034_29082016.png') }}" alt="logo html css" class="img-circle">#}
-{#                    <img src="{{ asset('img/logo_javascript.png') }}" alt="logo js" class="img-circle">#}
-{#                    <img src="{{ asset('img/formation-jquery.png') }}" alt="logo jQuery" class="img-circle">#}
-{#                    <img src="{{ asset('img/php_PNG50.png') }}" alt="logo php" class="img-circle">#}
-{#                    <img src="{{ asset('img/MySQL-Logo.wine.png') }}" alt="logo mySql" class="img-circle">#}
-{#                    <img src="{{ asset('img/logo-symfony.png') }}" alt="logo symfony" class="img-circle">#}
-{#                    <img src="{{ asset('img/unnamed2.png') }}" alt="logo Wordpress" class="img-circle">#}
-{#                    <img src="{{ asset('img/Stripe-Logo.png') }}" alt="logo stripe" class="img-circle">#}
-{#                    <img src="{{ asset('img/illustrator-full-logo.png') }}" alt="logo AdobeIllustrator" class="img-circle">#}
-{#                    <img src="{{ asset('img/blender_logo_socket.png') }}" alt="logo Blender" class="img-circle">#}
-{#                    <img src="{{ asset('img/seo-1024x499.png') }}" alt="logo SEO" class="img-circle">#}
-{#                    <img src="{{ asset('img/1280px-Git-logo.svg.png') }}" alt="logo GIT" class="img-circle">#}
-
+                </div>
+                <div class="col-11 d-flex m-auto">
+                    <!--wordpress-->
+                    <div class="circle img-circle">
+                        <span class="img-circle img-circle-7 circle_side circle_side-front-7"></span>
+                        <div class="circle_side-back">
+                            <ul class="circle_cta text-center text-white font-helvetica-thin">
+                                <li>Installation et configuration d'un site web</li>
+                                <li>Création de nouveaux thèmes</li>
+                                <li>Création de plugins</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--stripe-->
+                    <div class="circle img-circle">
+                        <span class="img-circle img-circle-8 circle_side circle_side-front-8"></span>
+                        <div class="circle_side-back">
+                            <ul class="circle_cta text-center text-white font-helvetica-thin">
+                                <li>Création de boutique e-commerce</li>
+                                <li>Installation et configuration d'un tunnel d'achat</li>
+                                <li>Installation et configuration d'un système d'abonnement</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--adobe illustrator-->
+                    <div class="circle img-circle">
+                        <span class="img-circle img-circle-9 circle_side circle_side-front-9"></span>
+                        <div class="circle_side-back">
+                            <ul class="circle_cta text-center text-white font-helvetica-thin">
+                                <li>Création et modification de dessins vectorielles</li>
+                                <li>Modifications mineures sur photos</li>
+                                <li>Création de GIF</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--blender-->
+                    <div class="circle img-circle">
+                        <span class="img-circle img-circle-10 circle_side circle_side-front-10"></span>
+                        <div class="circle_side-back">
+                            <ul class="circle_cta text-center text-white font-helvetica-thin">
+                                <li>Création et configuration de scène</li>
+                                <li>Modélisation 3D d'objets simples</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--SEO-->
+                    <div class="circle img-circle">
+                        <span class="img-circle img-circle-11 circle_side circle_side-front-11"></span>
+                        <div class="circle_side-back">
+                            <ul class="circle_cta text-center text-white font-helvetica-thin">
+                                <li>Connaissance des principales caractéristiques</li>
+                                <li>Utilisation Google Analytics</li>
+                                <li>SEA</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Git-->
+                    <div class="circle img-circle">
+                        <span class="img-circle img-circle-12 circle_side circle_side-front-12"></span>
+                        <div class="circle_side-back">
+                            <ul class="circle_cta text-center text-white font-helvetica-thin">
+                                <li>Utilisation de GIT en GUI (GitKraken, GitHub Desktop)</li>
+                                <li>Utilisation de GIT via terminal</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
             </div>
-
-
         </div>
 
+        <div class=" row bg-custom-2">
+            <div class="overlay col-12"></div>
+        </div>
+
+        <!--Partie capture d'écrans projets-->
+        <div class="row bg-dark mb-5">
+            <div class="col-12 mt-5 ">
+                <h1 class="font-helvetica-med text-center text-uppercase title-green-gradient">Quelques projets réalisées </h1>
+            </div>
+
+            <div class="row m-auto">
+                <!--My MomsBox-->
+                <div class="col-6">
+                    <div class="card card-effect">
+                        <div class="image">
+                            <img src="{{ asset('img/MomsBox-capture/slogo.png') }}" alt="Logo MyMomsBox"/>
+                            <img src="{{ asset('img/MomsBox-capture/MomsBoxPc.png') }}" alt="Aperçu site ">
+                        </div>
+                        <div class="details details-1">
+                            <div class="center">
+                                <h1 class="mt-5">My Mom's Box.fr<br><span>Site e-commerce de box mensuel par abonnements</span></h1>
+                                <p>(en cours de finalisation)</p>
+                                <div class="row">
+                                    <div class="col-9 description-list">
+                                        <ul class="font-helvetica-thin" ><strong>Développement complet du projet</strong>
+                                            <li>Conception graphique du logo et images du site </li>
+                                            <li>Web Design du site (Responsive Design)</li>
+                                            <li>Conception et développement des multiples fonctionnalités</li>
+                                            <li>Création Bases de Données</li>
+                                            <li>Création de boutique complète (avec paiement immédiat)</li>
+                                            <li>Création de système d'abonnements (avec paiements immédiats ou différés</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3">
+                                        <i class="fab fa-html5 resize-i" title="Langage Html"></i>
+                                        <i class="fab fa-css3-alt resize-i" title="Langage CSS"></i>
+                                        <img src="https://img.icons8.com/fluent-systems-filled/24/000000/adobe-illustrator.png" width="30" alt="icone adobe illustrator" title="Logiciel Adobe Illustrator"/>
+                                        <img src="https://img.icons8.com/metro/26/000000/mysql.png" width="30" alt="Icone MySql" title="SGBD MySql"/>
+                                        <i class="fab fa-bootstrap resize-i" title="Framework Bootstrap"></i>
+                                        <i class="fab fa-js-square resize-i" title="Libraire JS/jQuery"></i>
+                                        <i class="fab fa-php resize-i" title="Langage PHP"></i>
+                                        <i class="fab fa-symfony resize-i" title="Framework Symfony"></i>
+                                        <i class="fab fa-node-js resize-i" title="AJAX"></i>
+                                        <i class="fab fa-stripe resize-i" title="Module Stripe"></i>
+                                        <i class="fab fa-github resize-i" title="GIT"></i>
+                                    </div>
+                                </div>
+
+                                <div class="row flex-column">
+                                    <div class="col-12">
+                                        <img src="{{ asset('img/thumbnails/momsboxpc-min.png') }}" alt="img0" class="min-img" data-image="MBcapture1.png">
+                                        <img src="{{ asset('img/thumbnails/momsboxpc2-min.png') }}" alt="img1" class="min-img" data-image="MBcapture2.png">
+                                        <img src="{{ asset('img/thumbnails/momsboxpc3-min.png') }}" alt="img2" class="min-img" data-image="MBcapture.png">
+                                    </div>
+                                    <div class="col-12">
+                                        <img src="{{ asset('img/thumbnails/tablettemomsbox-min.png') }}" alt="img3" class="min-img" data-image="MBcapture4.png">
+                                        <img src="{{ asset('img/thumbnails/iphonemomsbox-min.png') }}" alt="img4" class="min-img" data-image="MBcapture3.png">
+                                    </div>
+
+                                </div>
 
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Li.Energies-->
+                <div class="col-6">
+                    <div class="card card-effect">
+                        <div class="image">
+                            <img src="{{ asset('img/li-energies-captures/LI-ENERGIES_sans_soleil_blanc.jpg') }}" alt="Logo Li.Energies"/>
+                            <img src="{{ asset('img/li-energies-captures/lienergiespc.png') }}" alt="Capture site LI.Energies">
+                        </div>
+                        <div class="details details-2">
+                            <div class="center">
+                                <h1 class="mt-5">Li.Energies<br><span>Site vitrine d'installation de panneaux photovoltaïques</span></h1>
+                                <p>(Entreprise fermé définitivement)</p>
+                                <div class="row">
+                                    <div class="col-9 description-list">
+                                        <ul class="font-helvetica-thin" ><strong>Développement complet du projet</strong>
+                                            <li>Conception graphique du logo et images du site </li>
+                                            <li>Web Design du site (Responsive Design)</li>
+                                            <li>Développement d'un formulaire de contacte, notifié à l'entreprise par e-mail</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3">
+                                        <i class="fab fa-html5 resize-i" title="Langage Html"></i>
+                                        <i class="fab fa-css3-alt resize-i" title="Langage CSS"></i>
+                                        <img src="https://img.icons8.com/fluent-systems-filled/24/000000/adobe-illustrator.png" width="30" alt="icone adobe illustrator" title="Logiciel Adobe Illustrator"/>
+                                        <i class="fab fa-bootstrap resize-i" title="Framework Bootstrap"></i>
+                                        <i class="fab fa-js-square resize-i" title="Libraire JS/jQuery"></i>
+                                        <i class="fab fa-php resize-i" title="Langage PHP"></i>
+                                        <i class="fab fa-symfony resize-i" title="Framework Symfony"></i>
+                                        <i class="fab fa-github resize-i" title="GIT"></i>
+                                    </div>
+                                </div>
+
+                                <div class="row flex-column">
+                                    <div class="col-12">
+                                        <img src="{{ asset('img/thumbnails/lienergiespc-min.png') }}" alt="img5" class="min-img" data-image="lienergiespc.png">
+                                        <img src="{{ asset('img/thumbnails/lienergiespc2-min.png') }}" alt="img6" class="min-img" data-image="lienergiespc2.png">
+                                         </div>
+                                    <div class="col-12">
+                                        <img src="{{ asset('img/thumbnails/lienergiespc3-min.png') }}" alt="img7" class="min-img" data-image="lienergiespc3.png">
+                                        <img src="{{ asset('img/thumbnails/tablettelienergies-min.png') }}" alt="img8" class="min-img" data-image="tablettelienergies.png">
+                                        <img src="{{ asset('img/thumbnails/iphone_lienergies-min.png') }}" alt="img9" class="min-img" data-image="iphone_lienergies.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{#        <div class="row bg-custom-3">#}
+{#            <div class="overlay col-12"></div>#}
+{#        </div>#}
+
+
+        <div class="glitch-2">
+            <div class="glitch__item"></div>
+            <div class="glitch__item"></div>
+            <div class="glitch__item"></div>
+            <div class="glitch__item"></div>
+            <div class="glitch__item"></div>
+            <h1 class="glitch__title">Contactez-moi</h1>
+        </div>
+
+        <!--Partie me contacter-->
+        <div class="row bg-dark mt-5">
+            <div class="col-sm-8 m-auto d-flex flex-column pb-5" id="contact">
+                <div class="">
+                    <h1 class="font-helvetica-med ">Pour me contacter</h1>
+                    <p class="font-helvetica-thin text-white p-form">Veuillez remplir ce formulaire</p>
+                </div>
+
+                <div class="row flex-column">
+                    <div class="col-12 m-auto">
+                        <label for="checkcontact" class="contactbutton">
+                            <div class="mail"></div>
+                        </label>
+                        <input id="checkcontact" type="checkbox">
+                        {# Ouverture du formulaire #}
+                        {{ form_start(form) }}
+
+
+
+                        {# Affichage du champ title #}
+                        {{ form_row(form.lastName) }}
+                        {{ form_row(form.firstName) }}
+                        {{ form_row(form.email) }}
+                        {{ form_row(form.subject) }}
+
+                        {# Affichage du champ content #}
+                        {{ form_row(form.content) }}
+
+                        <div>
+                            <label for="g-recaptcha">reCAPTCHA</label>
+                            <div class="g-recaptcha" data-sitekey="{{ google_recaptcha_site_key }}" id="g-recaptcha"></div>
+                        </div>
+
+                        <div class="flex-row champs mt-3">
+                            <span style="color: #0f9b0f">* </span> Champs obligatoires
+                        </div>
+
+
+                        {{ form_row(form.submit) }}
+
+                        {# Affichage des erreurs générales du formulaire  TODO Css #}
+                        {{ form_errors(form) }}
+
+                        {# TODO TWIG + CSS affichage message de succès d'envoie du formulaire #}
+                        {# Fermeture du formulaire #}
+                        {{ form_end(form) }}
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
 
         <footer>
             Suivez le lapin blanc !
@@ -108,6 +384,10 @@
             Mets ta ceinture Alice ! Et bon voyage, au pays des merveilles !
             Toute chose commence par un choix !
             Je ne peux que te montrer la porte, c'est à toi qu'il appartient de la franchir.
+
+            Source:
+            <a href="https://icons8.com/icon/2940/adobe-illustrator">Adobe Illustrator icon by Icons8</a>
+            <a href="https://icons8.com/icon/777/mysql">MySQL icon by Icons8</a>
         </footer>
 
     </div>
