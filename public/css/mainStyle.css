@@ -15,6 +15,7 @@
     font-family: "Matrix";
     src: url("../fonts/matrix.ttf");
 }
+
 .font-matrix{
     font-family: "Matrix";
 }
@@ -39,6 +40,12 @@ body{
     margin: 0;
     padding: 0;
 }
+.ul-nav{
+    font-size: 15px;
+}
+li{
+    list-style: none;
+}
 .bg-green-dark{
     background: rgb(7,8,7);
     background: linear-gradient(90deg, rgba(7,8,7,1) 0%, rgba(65,65,78,1) 35%, rgba(3,69,21,1) 100%);
@@ -48,6 +55,12 @@ canvas {
     position:absolute;
     top:0;
     left:0;
+}
+#canvas{
+    width: 1260px;
+}
+#canvas2{
+    width: 1260px;
 }
 #app {
     background: #0a0a0a;
@@ -59,10 +72,6 @@ canvas {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px), url("https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=7118759521e3184778a3b5e010e202c6");
-    background-size: cover;
-    background-position: center;
-    z-index: 1;
 }
 
 #wrapper {
@@ -72,10 +81,14 @@ canvas {
 .sub {
     color: green;
     letter-spacing: 1em;
-    position: absolute;
-    left: 28rem;
+    position: relative;
     font-weight: bold;
     font-size: 20px;
+}
+
+.navbar-dark .navbar-toggler-icon{
+    background-image: url("../img/icons8-écran-matrix-48.png");
+    font-size: 2rem;
 }
 
 /* Our mixin positions a copy of our text
@@ -576,5 +589,215 @@ skew to change the 'thickness' of the glitch.*/
 }
 li::before {
     content: "•";
-    color: green;
+    color: #34C924;
+}
+.projects-card {
+    justify-content: space-between;
+}
+
+/*Footer*/
+.info-footer{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: #34C924;
+
+}
+.border-footer{
+    border-top: 1px groove #34C924;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.arrow{
+    width: 30px;
+    position:fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.mop{
+    width: 100%;
+}
+
+/*MediaQueries*/
+@media screen and (min-width: 320px) and (max-width: 400px){
+    .sub{
+        left: 0;
+        letter-spacing: 15px;
+    }
+
+    .p-who-am-i{
+        font-size: 2rem;
+        line-height: 1.5em;
+    }
+
+    #anchor-competences{
+        font-size: 30px;
+    }
+    #title-project{
+        font-size: 30px;
+    }
+    .skills{
+        flex-direction: column;
+    }
+    .img-circle{
+        margin: auto;
+    }
+    #anchor-projects{
+        height: 110rem;
+    }
+    .projects-card{
+        flex-direction: column;
+    }
+    .glitch-2 .glitch__title{
+        font-size: 47px;
+    }
+    #card-momsBox{
+       left: 65%;
+       width: 40rem;
+        perspective: 0;
+        height: 100%;
+    }
+    #card-liEnergies{
+       left: 65%;
+       width: 40rem;
+        perspective: 0;
+        height: 100%;
+    }
+    .card-to-resize{
+        margin-top: 15rem;
+    }
+    #div-glitch{
+        height: 50vh;
+    }
+    #glitch-title{
+        font-size: 45px;
+    }
+    .form-group{
+        width: 90%;
+    }
+    #div-recaptcha{
+        width: 100%;
+    }
+    #g-recaptcha{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 600px){
+    .sub{
+        left: 0;
+    }
+    .p-who-am-i{
+        font-size: 2.2rem;
+        line-height: 1.5em;
+    }
+    #anchor-competences{
+        font-size: 37px;
+    }
+    .skills{
+        flex-direction: column;
+    }
+    .img-circle{
+        margin: auto;
+    }
+    #title-project{
+        font-size: 37px;
+    }
+    .projects-card{
+        flex-direction: column;
+    }
+    .card-to-resize{
+        margin-top: 20rem;
+    }
+    #card-momsBox{
+        left: 68%;
+        width: 50rem;
+        perspective: 0;
+        height: 100%;
+    }
+    #card-liEnergies{
+        left: 68%;
+        width: 50rem;
+        perspective: 0;
+        height: 100%;
+    }
+
+    #div-glitch{
+        height: 65vh;
+    }
+    #glitch-title{
+        font-size: 54px;
+    }
+    .form-group{
+        width: 100%;
+    }
+    #div-recaptcha{
+        width: 100%;
+    }
+    #g-recaptcha{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1002px) {
+    .sub{
+        left: 5rem;
+    }
+    .p-who-am-i{
+        font-size: 2rem;
+    }
+    .skills{
+        flex-direction: column;
+    }
+    .img-circle{
+        margin: auto;
+    }
+    .projects-card{
+        flex-direction: column;
+    }
+    .card-to-resize{
+        margin-top: 30rem;
+    }
+    #card-momsBox{
+        left: 95%;
+        height: 70rem;
+        perspective: 300rem;
+    }
+    #card-liEnergies{
+        left: 95%;
+        height: 70rem;
+        perspective: 300rem;
+    }
+    #card-capture-momsbox{
+        width: 650px;
+        height: 400px;
+        position: relative;
+        right: 90px;
+    }
+    #card-capture-lienergies{
+        width: 650px;
+        height: 380px;
+        position: relative;
+        right: 90px;
+    }
+    #div-glitch{
+        height: 50vh;
+    }
+    #anchor-contact{
+        max-width: 90%;
+    }
+    .form-group{
+        width: 100%;
+    }
+    #div-recaptcha{
+        width: 100%;
+    }
+    #g-recaptcha{
+        width: 100%;
+    }
+    .champs{
+        margin: 0;
+    }
 }

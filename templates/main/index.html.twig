@@ -8,18 +8,15 @@
         <div id="app">
             <div id="wrapper">
                     <!-- Make sure data-text equals the text you put inside the tags. -->
-                    <h1 class="glitch" data-text="DOUNIA MANHOULI">DOUNIA MANHOULI</h1>
+                    <h1 class="glitch" id="anchor-remontada" data-text="DOUNIA MANHOULI">DOUNIA MANHOULI</h1>
                     <span class="sub">Développeuse web junior</span>
                 </div>
         </div>
 
         <div class="row  matrix-row flex-column">
-            <h1 class="font-matrix m-auto my-name">
-                BIENVENUE
-            </h1>
         </div>
 
-        <div class="row bg-dark">
+        <div class="row bg-dark" id="anchor-sum">
             <p class="lead text-white p-who-am-i">
                 Je m'apelle Dounia Manhouli et je suis Développeuse web junior. <br>
                 Passionnée par la réalisation, le développement et l’intégration de projets web, aussi bien côté Front-End que Back-End, c’est avec beaucoup de détermination et de plaisir que j'ai obtenu mon titre professionnel au sein de l'école
@@ -30,7 +27,7 @@
 
         <div class="row bg-dark">
             <div class="col-6 my-ancre-btn">
-                <a href="#compétences" class="border-animation">
+                <a href="#anchor-competences" class="border-animation">
                     <div class="border-animation__inner">
                     Voir mes compétences</div>
                 </a>
@@ -46,11 +43,11 @@
         <!--Partie compétences-->
         <div class="row bg-dark flex-column">
             <div class="col-12 mt-5 mb-5">
-                <h1 class="font-helvetica-med title-green-gradient text-center text-uppercase " id="compétences">Mes compétences</h1>
+                <h1 class="font-helvetica-med title-green-gradient text-center text-uppercase " id="anchor-competences">Mes compétences</h1>
             </div>
 
             <div class="row">
-                <div class="col-11 d-flex m-auto">
+                <div class="col-11 d-flex skills">
                     <!--HTML/CSS-->
                     <div class="circle img-circle">
                         <span class="img-circle img-circle-1 circle_side circle_side-front-1"></span>
@@ -119,7 +116,7 @@
                     </div>
 
                 </div>
-                <div class="col-11 d-flex m-auto">
+                <div class="col-11 d-flex skills">
                     <!--wordpress-->
                     <div class="circle img-circle">
                         <span class="img-circle img-circle-7 circle_side circle_side-front-7"></span>
@@ -194,18 +191,18 @@
         </div>
 
         <!--Partie capture d'écrans projets-->
-        <div class="row bg-dark mb-5">
-            <div class="col-12 mt-5 ">
-                <h1 class="font-helvetica-med text-center text-uppercase title-green-gradient">Quelques projets réalisées </h1>
+        <div class="row bg-dark mb-5" id="anchor-projects">
+            <div class="col-12 mt-5 mb-5 ">
+                <h1 class="font-helvetica-med text-center text-uppercase title-green-gradient" id="title-project">Quelques projets réalisées </h1>
             </div>
 
-            <div class="row m-auto">
+            <div class="row m-auto projects-card">
                 <!--My MomsBox-->
-                <div class="col-6">
-                    <div class="card card-effect">
+                <div class="col-5 offset-1 card-to-resize" >
+                    <div class="card card-effect" id="card-momsBox">
                         <div class="image">
                             <img src="{{ asset('img/MomsBox-capture/slogo.png') }}" alt="Logo MyMomsBox"/>
-                            <img src="{{ asset('img/MomsBox-capture/MomsBoxPc.png') }}" alt="Aperçu site ">
+                            <img src="{{ asset('img/MomsBox-capture/MomsBoxPc.png') }}" alt="Aperçu site " id="card-capture-momsbox">
                         </div>
                         <div class="details details-1">
                             <div class="center">
@@ -256,11 +253,11 @@
                     </div>
                 </div>
                 <!--Li.Energies-->
-                <div class="col-6">
-                    <div class="card card-effect">
+                <div class="col-5 offset-1">
+                    <div class="card card-effect" id="card-liEnergies">
                         <div class="image">
                             <img src="{{ asset('img/li-energies-captures/LI-ENERGIES_sans_soleil_blanc.jpg') }}" alt="Logo Li.Energies"/>
-                            <img src="{{ asset('img/li-energies-captures/lienergiespc.png') }}" alt="Capture site LI.Energies">
+                            <img src="{{ asset('img/li-energies-captures/lienergiespc.png') }}" alt="Capture site LI.Energies" id="card-capture-lienergies">
                         </div>
                         <div class="details details-2">
                             <div class="center">
@@ -307,19 +304,23 @@
 {#            <div class="overlay col-12"></div>#}
 {#        </div>#}
 
-
-        <div class="glitch-2">
+        <div class="glitch-2" id="div-glitch">
             <div class="glitch__item"></div>
             <div class="glitch__item"></div>
             <div class="glitch__item"></div>
             <div class="glitch__item"></div>
             <div class="glitch__item"></div>
-            <h1 class="glitch__title">Contactez-moi</h1>
+            <h1 class="glitch__title" id="glitch-title">Contactez-moi</h1>
         </div>
 
         <!--Partie me contacter-->
-        <div class="row bg-dark mt-5">
-            <div class="col-sm-8 m-auto d-flex flex-column pb-5" id="contact">
+        <div class="row bg-dark mt-5  flex-column" id="form-contact">
+            {# Affichage de tous les flash messages de type "success" #}
+            {% for message in app.flashes('success') %}
+                <div class="font-helvetica-med" style="color:green;text-align: center;font-size: large;padding-bottom: 10px;">{{ message }}</div>
+            {% endfor %}
+
+            <div class="col-sm-8 m-auto d-flex flex-column pb-5" id="anchor-contact">
                 <div class="">
                     <h1 class="font-helvetica-med ">Pour me contacter</h1>
                     <p class="font-helvetica-thin text-white p-form">Veuillez remplir ce formulaire</p>
@@ -334,60 +335,47 @@
                         {# Ouverture du formulaire #}
                         {{ form_start(form) }}
 
-
-
-                        {# Affichage du champ title #}
+                        {{ form_errors(form) }}
                         {{ form_row(form.lastName) }}
                         {{ form_row(form.firstName) }}
                         {{ form_row(form.email) }}
                         {{ form_row(form.subject) }}
-
-                        {# Affichage du champ content #}
                         {{ form_row(form.content) }}
 
-                        <div>
+                        <div id="div-recaptcha">
                             <label for="g-recaptcha">reCAPTCHA</label>
                             <div class="g-recaptcha" data-sitekey="{{ google_recaptcha_site_key }}" id="g-recaptcha"></div>
                         </div>
 
+                        {{ form_row(form.agreeTerms) }}
                         <div class="flex-row champs mt-3">
                             <span style="color: #0f9b0f">* </span> Champs obligatoires
                         </div>
 
-
                         {{ form_row(form.submit) }}
-
-                        {# Affichage des erreurs générales du formulaire  TODO Css #}
-                        {{ form_errors(form) }}
-
-                        {# TODO TWIG + CSS affichage message de succès d'envoie du formulaire #}
                         {# Fermeture du formulaire #}
                         {{ form_end(form) }}
-
                     </div>
-
                 </div>
-
-
-
-
-
-
-
                 </div>
             </div>
         </div>
 
-        <footer>
-            Suivez le lapin blanc !
-            Libérez votre esprit ! Confiez-moi vos futurs projets !
-            Mets ta ceinture Alice ! Et bon voyage, au pays des merveilles !
-            Toute chose commence par un choix !
-            Je ne peux que te montrer la porte, c'est à toi qu'il appartient de la franchir.
+        <footer class="bg-dark pt-5">
+            <div class="d-flex border-footer pt-5 pb-5">
+                    <div class="text"></div>
 
-            Source:
-            <a href="https://icons8.com/icon/2940/adobe-illustrator">Adobe Illustrator icon by Icons8</a>
-            <a href="https://icons8.com/icon/777/mysql">MySQL icon by Icons8</a>
+                <div class="arrow">
+                    <a href="#anchor-remontada">
+                        <img src="{{ asset('img/matrix-arrow.png') }}" alt="flèche remontante" class="mop">
+
+                    </a>
+                </div>
+
+            </div>
+
+
+
         </footer>
 
     </div>

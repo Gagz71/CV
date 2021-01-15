@@ -360,10 +360,10 @@
 
 
 /*Formulaire de contacte*/
-#contact {
+#anchor-contact {
     background: linear-gradient(90deg, rgba(7,8,7,1) 0%, rgba(65,65,78,1) 35%, rgba(3,69,21,1) 100%);
 }
-#contact::after {
+#anchor-contact::after {
     content: "";
     display: block;
     height: 30px;
@@ -377,7 +377,7 @@
     z-index: -1;
 }
 
-#contact h1 {
+#anchor-contact h1 {
     font-size: 1.75em;
     color: white;
     text-shadow: 0 0.06em 0 snow;
@@ -391,8 +391,8 @@
 }
 .contactbutton {
     background: #0f9b0f;
-    -webkit-box-shadow: 1px 1px 0 0 darkgreen,2px 2px 0 0 darkgreen,3px 3px 0 0 darkgreen;
-    box-shadow: 1px 1px 0 0 darkgreen,2px 2px 0 0 darkgreen,3px 3px 0 0 darkgreen;
+    -webkit-box-shadow: 1px 1px 0 0 #34C924,2px 2px 0 0 #34C924,3px 3px 0 0 #34C924;
+    box-shadow: 1px 1px 0 0 #34C924,2px 2px 0 0 #34C924,3px 3px 0 0 #34C924;
     text-align: center;
     display: block;
     width: 0%;
@@ -402,8 +402,8 @@
     cursor: pointer;
 }
 .contactbutton:hover {
-    -webkit-box-shadow: 1px 1px 0 0 darkgreen,0px 0px 0 0 darkgreen,0px 0px 0 0 darkgreen;
-    box-shadow: 1px 1px 0 0 darkgreen,0px 0px 0 0 darkgreen,0px 0px 0 0 darkgreen;
+    -webkit-box-shadow: 1px 1px 0 0 #34C924,0px 0px 0 0 #34C924,0px 0px 0 0 #34C924;
+    box-shadow: 1px 1px 0 0 #34C924,0px 0px 0 0 #34C924,0px 0px 0 0 #34C924;
     margin-top: 22px;
     margin-left: 2px;
     margin-bottom: 0px;
@@ -413,7 +413,7 @@
     font-size: 15px;
     display: inline-block;
     border-top: 2em solid transparent;
-    border-left: 2.6em solid darkgreen;
+    border-left: 2.6em solid #34C924;
     height: 0;
     width: 0;
     position: relative;
@@ -424,7 +424,7 @@
     left: -2.95em;
     display: block;
     position: absolute;
-    border-top: 1.2em solid darkgreen;
+    border-top: 1.2em solid #34C924;
     border-left: 1.6em solid transparent;
     border-right: 1.6em solid transparent;
     border-bottom: 1em solid transparent;
@@ -435,7 +435,7 @@
     content: "";
     position: absolute;
     border-top: 2em solid transparent;
-    border-right: 2.6em solid darkgreen;
+    border-right: 2.6em solid #34C924;
     height: 0;
     width: 0;
     left: -2.18em;
@@ -471,10 +471,12 @@ form label{
 }
 form label:after{
     content: " *";
-    color: #0f9b0f;
+    color: #34C924;
 }
 form input{
     font-family: "Helvetica NeueThin";
+}
+.form-control{
     font-size: 17px;
     padding: 5px;
 }
@@ -493,9 +495,32 @@ form textarea{
     font-family: "Helvetica NeueBD";
     color: snow;
 }
-#contact > div:nth-child(2) > div:nth-child(1) > form:nth-child(3) > div:nth-child(8){
-    width: 30%;
+
+/*Div AgreeTerms*/
+.form-check{
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
 }
+.form-check-label{
+    font-size: 12px;
+    text-transform: initial;
+    font-family: "Helvetica NeueMedium";
+    padding-left: 10px;
+}
+.form-error-message{
+    font-size: 15px;
+}
+form span.alert.alert-danger.d-block{
+    width: 60%;
+    margin: auto;
+}
+/*Champs Nom*/
+div.form-group:nth-child(2){
+    margin-top: 1rem;
+}
+
 @media (max-width: 500px){
     #contact {
         width: 100%;
@@ -510,7 +535,7 @@ form textarea{
     background-image: linear-gradient(to right, #000000 0%, #0f9b0f  51%, #000000  100%)
 }
 .btn-grad {
-    margin: 10px;
+    margin: auto;
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
@@ -519,6 +544,8 @@ form textarea{
     color: white;
     border-radius: 10px;
     display: block;
+    width: 50%;
+    font-size: 1.25rem;
 }
 
 .btn-grad:hover {

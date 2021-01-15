@@ -3,6 +3,7 @@
 namespace App\Form;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -23,7 +24,13 @@ class ContactFormType extends AbstractType
 				'constraints' => [
 					new NotBlank([
 						'message' => 'Merci de renseigner votre nom'
-					])
+					]),
+                    new Length([
+                        'min' => 2,
+                        'max' => 50,
+                        'minMessage' =>  'Votre nom doit contenir au moins {{ limit }} caractères',
+                        'maxMessage' => 'Votre nom doit contenir au moins {{ limit }} caractères',
+                    ])
 				]
 		        ])
 		        ->add('firstName', TextType::class, [
@@ -31,7 +38,13 @@ class ContactFormType extends AbstractType
 			        'constraints' => [
 				        new NotBlank([
 					        'message' => 'Merci de renseigner votre prénom'
-				        ])
+				        ]),
+                        new Length([
+                            'min' => 2,
+                            'max' => 50,
+                            'minMessage' =>  'Votre nom doit contenir au moins {{ limit }} caractères',
+                            'maxMessage' => 'Votre nom doit contenir au moins {{ limit }} caractères',
+                        ])
 			        ]
 		        ])
 			->add('email', EmailType::class, [
@@ -76,8 +89,16 @@ class ContactFormType extends AbstractType
 					'class' => 'btn-grad'
 				]
 			])
+			->add('agreeTerms', CheckboxType::class, [
+				'label' => 'En soumettant ce formulaire, j\'accepte que les informations saisies soient exploitées dans le cadre de la demande de contact et de la relation commerciale qui peut en découler',
+				'constraints' => [
+					new NotBlank([
+						'message' => 'Merci de renseigner un message'
+					]),
+				]
+			])
 
-		;
+			;
 	}
 
     public function configureOptions(OptionsResolver $resolver)
